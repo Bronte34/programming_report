@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <time.h>
 
 int func1(int);
 
@@ -24,7 +23,7 @@ int func1(int num)
 
 	else if (num == 1)
 		return 888;
-
+	
 	else 
 		return (func1(num - 2) + func0(num - 1)) / 2;
 }
@@ -43,8 +42,6 @@ int loop(int i, int (*calc_func0_plus_func1)(int))
 	if (calc_func0_plus_func1(i))
 		loop(i + 1, calc_func0_plus_func1);
 }
-
-
 
 int main(void)
 {
