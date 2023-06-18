@@ -8,9 +8,7 @@ int func0(int num)
 
 	if (num == 0)
 		return 111;
-
 	else if (num == 1)
-
 		return 999;
 	else 
 		return (func0(num - 2) + func1(num - 1)) / 2;
@@ -20,10 +18,8 @@ int func1(int num)
 {
 	if (num == 0)
 		return 222;
-
 	else if (num == 1)
 		return 888;
-	
 	else 
 		return (func1(num - 2) + func0(num - 1)) / 2;
 }
